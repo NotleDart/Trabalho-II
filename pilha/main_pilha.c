@@ -1,7 +1,3 @@
-// main_pilha.c
-// Aplicação: Desfazer ações (como o Ctrl+Z)
-// A pilha guarda as ações feitas. Desempilhar = desfazer a última ação.
-
 #include <stdio.h>
 #include "pilha.h"
 
@@ -21,10 +17,9 @@ int main() {
         printf("0 - Sair\n");
         printf("Opcao: ");
 
-        // Se scanf retornar 0, o usuario digitou algo que nao e numero
+       
         if (scanf(" %d", &opcao) == 0) {
             printf("Erro ao identificar acao. Digite apenas numeros.\n");
-            // Limpa o que ficou no buffer para nao travar o loop
             scanf("%*[^\n]");
             opcao = -1;
             continue;
