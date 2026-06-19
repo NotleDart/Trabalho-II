@@ -1,7 +1,3 @@
-// main_fila.c
-// Aplicação: Fila de atendimento (tipo banco ou lotérico)
-// Quem chega primeiro é atendido primeiro (FIFO)
-
 #include <stdio.h>
 #include "fila.h"
 
@@ -21,10 +17,8 @@ int main() {
         printf("0 - Sair\n");
         printf("Opcao: ");
 
-        // Se scanf retornar 0, o usuario digitou algo que nao e numero
         if (scanf(" %d", &opcao) == 0) {
             printf("Erro ao identificar acao. Digite apenas numeros.\n");
-            // Limpa o que ficou no buffer para nao travar o loop
             scanf("%*[^\n]");
             opcao = -1;
             continue;
