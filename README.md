@@ -2,6 +2,7 @@
 
 Trabalho da disciplina de Estrutura de Dados I  
 UESPI - Campus Piripiri
+--------------------
 aluno: Elton Duarte
 
 ## O que foi feito
